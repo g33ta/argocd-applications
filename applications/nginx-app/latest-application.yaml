@@ -12,7 +12,7 @@ spec:
   source:
     repoURL: https://github.com/g33ta/argocd-applications.git
     targetRevision: HEAD
-    path: ./applications/latet-application.yaml
+    path: ./applications/nginx-app
    
    
   destination:
