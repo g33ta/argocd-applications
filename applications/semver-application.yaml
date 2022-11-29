@@ -4,7 +4,7 @@ metadata:
   name: semver-app
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: ghcr.io/g33ta/sourcecode:~1
+    argocd-image-updater.argoproj.io/image-list: ghcr.io/g33ta/sourcecode:~v1.0
     #argocd-image-updater.argoproj.io/argocd.kustomize.image-name: nginx
     #argocd-image-updater.argoproj.io/image-list: yourtool=ghcr.io/g33ta/sourcecode
     #argocd-image-updater.argoproj.io/yourtool.update-strategy: latest
