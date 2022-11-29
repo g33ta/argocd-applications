@@ -10,9 +10,9 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/g33ta/argocd-applications.git
+    repoURL: https://github.com/g33ta/helm-charts.git
     targetRevision: HEAD
-    path: ./applications/nginx-app
+    path: ./charts/hello-world
    
    
   destination:
