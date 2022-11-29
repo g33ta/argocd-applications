@@ -1,18 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: semver-app
+  name: latest-app
   namespace: argocd
   annotations:
     argocd-image-updater.argoproj.io/image-list: ghcr.io/g33ta/sourcecode:~1.0
-    #argocd-image-updater.argoproj.io/argocd.kustomize.image-name: nginx
+    #argocd-image-updater.argoproj.io/example.update-strategy: latest
 spec:
   project: default
 
   source:
     repoURL: https://github.com/g33ta/argocd-applications.git
     targetRevision: HEAD
-    path: ./applications
+    path: ./applications/latet-application.yaml
+   
    
   destination:
     server: https://kubernetes.default.svc
