@@ -13,6 +13,9 @@ metadata:
     #latest &digest
     #argocd-image-updater.argoproj.io/image-list: fooalias=ghcr.io/g33ta/sourcecode:latest
     #argocd-image-updater.argoproj.io/fooalias.update-strategy: digest
+    
+    #imageupdate writeback:git and secrets
+    argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd-image-updater/git-creds
 spec:
   project: default
 
